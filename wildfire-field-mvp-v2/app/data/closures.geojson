@@ -1,0 +1,27 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "closure-east",
+        "name": "동측 통제선",
+        "reason": "낙석 및 화선 근접",
+        "source": "sample"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6095,
+            37.455
+          ],
+          [
+            128.6105,
+            37.445
+          ]
+        ]
+      }
+    }
+  ]
+}

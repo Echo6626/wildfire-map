@@ -1,0 +1,413 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-01",
+        "name": "서측 접근로",
+        "road_class": "local",
+        "segment_type": "road",
+        "speed_kph": 40,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.59,
+            37.45
+          ],
+          [
+            128.6,
+            37.45
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-02",
+        "name": "중앙 임도 1",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 28,
+        "night_ok": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6,
+            37.45
+          ],
+          [
+            128.61,
+            37.45
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-03",
+        "name": "중앙 임도 2",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 28,
+        "night_ok": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.61,
+            37.45
+          ],
+          [
+            128.62,
+            37.45
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-04",
+        "name": "북측 산길 1",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 18,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.59,
+            37.458
+          ],
+          [
+            128.6,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-05",
+        "name": "북측 산길 2",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 18,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6,
+            37.458
+          ],
+          [
+            128.61,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-06",
+        "name": "북측 연결로",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 20,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.61,
+            37.458
+          ],
+          [
+            128.62,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-07",
+        "name": "남측 산길 1",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 18,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.59,
+            37.442
+          ],
+          [
+            128.6,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-08",
+        "name": "남측 산길 2",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 18,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6,
+            37.442
+          ],
+          [
+            128.61,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-09",
+        "name": "남측 연결로",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 20,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.61,
+            37.442
+          ],
+          [
+            128.62,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-10",
+        "name": "서북 연결로",
+        "road_class": "local",
+        "segment_type": "road",
+        "speed_kph": 32,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.59,
+            37.45
+          ],
+          [
+            128.59,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-11",
+        "name": "서남 연결로",
+        "road_class": "local",
+        "segment_type": "road",
+        "speed_kph": 32,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.59,
+            37.45
+          ],
+          [
+            128.59,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-12",
+        "name": "북측 진입 임도",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 20,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6,
+            37.45
+          ],
+          [
+            128.6,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-13",
+        "name": "중앙 북상로",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 14,
+        "night_ok": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.61,
+            37.45
+          ],
+          [
+            128.61,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-14",
+        "name": "동북 연결로",
+        "road_class": "local",
+        "segment_type": "road",
+        "speed_kph": 30,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.62,
+            37.45
+          ],
+          [
+            128.62,
+            37.458
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-15",
+        "name": "남측 진입 임도",
+        "road_class": "forest",
+        "segment_type": "road",
+        "speed_kph": 20,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.6,
+            37.45
+          ],
+          [
+            128.6,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-16",
+        "name": "중앙 남하로",
+        "road_class": "forest",
+        "segment_type": "trail",
+        "speed_kph": 14,
+        "night_ok": false
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.61,
+            37.45
+          ],
+          [
+            128.61,
+            37.442
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "r-17",
+        "name": "동남 연결로",
+        "road_class": "local",
+        "segment_type": "road",
+        "speed_kph": 30,
+        "night_ok": true
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            128.62,
+            37.45
+          ],
+          [
+            128.62,
+            37.442
+          ]
+        ]
+      }
+    }
+  ]
+}

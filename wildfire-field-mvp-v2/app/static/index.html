@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>산불 현장 종합 안내 MVP</title>
+  <meta name="theme-color" content="#111827" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="eyebrow">현장 시연용 프로토타입</div>
+        <h1>산불 현장 종합 안내 MVP</h1>
+        <p id="syncStatus" class="muted">초기화 중…</p>
+      </div>
+
+      <section class="panel">
+        <h2>작전 입력</h2>
+        <div class="field-stack">
+          <label class="field-label">시작점</label>
+          <div class="button-row">
+            <button id="useMapCenterBtn" class="secondary">지도 중심</button>
+            <button id="useGeolocationBtn" class="secondary">현위치</button>
+          </div>
+          <div id="startPointText" class="kv-box">선택되지 않음</div>
+        </div>
+
+        <div class="field-stack">
+          <label for="goalLayerSelect" class="field-label">목표 유형</label>
+          <select id="goalLayerSelect">
+            <option value="shelters">대피소</option>
+            <option value="water">수자원</option>
+            <option value="staging">대기/집결지</option>
+          </select>
+          <div class="button-row">
+            <button id="clearTargetBtn" class="secondary">목표 해제</button>
+            <button id="routeBtn">후보 경로 계산</button>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" id="nightModeCheckbox" checked />
+            <span>야간 모드 경로 계산</span>
+          </label>
+          <div id="selectedTargetCard" class="kv-box">지도 또는 인접 자원 목록에서 특정 목표를 지정할 수 있습니다.</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>통제 후보 도로</h2>
+        <p class="muted small">도로/임도 팝업이나 경로 세부구간에서 차단 표시하면 계산에서 제외됩니다.</p>
+        <div id="blockedSegmentList" class="chip-list empty">차단 후보가 없습니다.</div>
+        <div class="button-row">
+          <button id="clearBlockedSegmentsBtn" class="secondary">모두 해제</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>레이어</h2>
+        <div id="layerToggles" class="toggle-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>화선/통제선 갱신</h2>
+        <div class="upload-grid">
+          <label class="file-label">
+            <span>화선 업로드</span>
+            <input id="firelineFile" type="file" accept=".geojson,.json,.kml,.gpx,application/geo+json,application/json,application/vnd.google-earth.kml+xml,application/gpx+xml" />
+          </label>
+          <button id="uploadFirelineBtn">화선 업로드</button>
+
+          <label class="file-label">
+            <span>통제선 업로드</span>
+            <input id="closuresFile" type="file" accept=".geojson,.json,.kml,.gpx,application/geo+json,application/json,application/vnd.google-earth.kml+xml,application/gpx+xml" />
+          </label>
+          <button id="uploadClosuresBtn">통제선 업로드</button>
+        </div>
+        <div class="button-row">
+          <button id="resetDemoBtn" class="secondary">샘플로 복구</button>
+        </div>
+        <p class="muted small">GeoJSON, KML, GPX 업로드를 지원합니다. 현재 MVP는 상황실 수동 반영을 전제로 둡니다.</p>
+      </section>
+
+      <section class="panel">
+        <h2>작전 브리핑</h2>
+        <div id="briefingCard" class="kv-box">경로를 계산하면 선택된 동선의 핵심 요약이 이곳에 표시됩니다.</div>
+      </section>
+
+      <section class="panel">
+        <h2>후보 경로</h2>
+        <div id="routeList" class="card-list empty">경로를 계산하면 이곳에 후보 동선이 표시됩니다.</div>
+      </section>
+
+      <section class="panel">
+        <h2>인접 자원</h2>
+        <div id="nearbyList" class="card-list empty">시작점을 지정하면 최근접 대피소/수자원/집결지를 계산합니다.</div>
+      </section>
+
+      <section class="panel">
+        <h2>공식 연계 카탈로그</h2>
+        <div id="sourceCatalog" class="catalog"></div>
+      </section>
+    </aside>
+
+    <main class="map-stage">
+      <div class="topbar">
+        <div class="topbar-title">현재 상황</div>
+        <div class="badge-row" id="layerBadges"></div>
+      </div>
+      <div id="map"></div>
+      <div class="legend">
+        <div><span class="swatch fireline"></span> 화선</div>
+        <div><span class="swatch closure"></span> 통제선</div>
+        <div><span class="swatch shelter"></span> 대피소</div>
+        <div><span class="swatch water"></span> 수자원</div>
+        <div><span class="swatch staging"></span> 대기/집결지</div>
+        <div><span class="swatch blocked"></span> 수동 차단 도로</div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water-north",
+        "name": "북측 저수조",
+        "kind": "소방용수",
+        "address": "샘플군 북면 2-4"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.598,
+          37.459
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water-west",
+        "name": "서측 저수지",
+        "kind": "저수지",
+        "address": "샘플군 서면 3-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.589,
+          37.443
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water-south-east",
+        "name": "남동 관정",
+        "kind": "관정",
+        "address": "샘플군 남동면 8-2"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.611,
+          37.441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "water-central",
+        "name": "비상급수시설",
+        "kind": "비상급수",
+        "address": "샘플군 중앙면 5-7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.602,
+          37.446
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <style>
+    .bg { fill:#0b1220; }
+    .panel { fill:#111827; stroke:#233149; stroke-width:2; rx:18; }
+    .title { fill:#e5ecf6; font:700 28px 'Noto Sans KR', sans-serif; }
+    .subtitle { fill:#95a2b8; font:400 17px 'Noto Sans KR', sans-serif; }
+    .label { fill:#e5ecf6; font:700 21px 'Noto Sans KR', sans-serif; }
+    .text { fill:#cbd5e1; font:400 17px 'Noto Sans KR', sans-serif; }
+    .line { stroke:#7dd3fc; stroke-width:3; marker-end:url(#arrow); fill:none; }
+    .soft { fill:#162032; stroke:#233149; stroke-width:1.5; rx:14; }
+  </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7dd3fc"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1400" height="900"/>
+
+  <text x="60" y="70" class="title">산불 현장 종합 안내 MVP 아키텍처</text>
+  <text x="60" y="108" class="subtitle">상황실 수동 업로드 + 공식 데이터 카탈로그 + 현장용 지도/PWA + 수동 차단 구간</text>
+
+  <rect x="60" y="160" width="330" height="270" class="panel"/>
+  <text x="88" y="205" class="label">현장 / 상황실 입력</text>
+  <rect x="88" y="230" width="274" height="48" class="soft"/><text x="108" y="260" class="text">화선 업로드: GeoJSON / KML / GPX</text>
+  <rect x="88" y="290" width="274" height="48" class="soft"/><text x="108" y="320" class="text">통제선 업로드: GeoJSON / KML / GPX</text>
+  <rect x="88" y="350" width="274" height="48" class="soft"/><text x="108" y="380" class="text">수동 차단 도로/임도 표시</text>
+  <rect x="88" y="410" width="274" height="48" class="soft"/><text x="108" y="440" class="text">현장 제보 수자원 / 임시집결지</text>
+
+  <rect x="510" y="140" width="390" height="560" class="panel"/>
+  <text x="540" y="185" class="label">FastAPI 백엔드</text>
+  <rect x="540" y="210" width="330" height="58" class="soft"/><text x="560" y="245" class="text">Importer: GeoJSON/KML/GPX 파서</text>
+  <rect x="540" y="285" width="330" height="58" class="soft"/><text x="560" y="320" class="text">LayerStore: 샘플/업로드/원격 레이어 + 메타</text>
+  <rect x="540" y="360" width="330" height="58" class="soft"/><text x="560" y="395" class="text">RouteEngine: 야간 패널티, 화선 버퍼, 차단구간</text>
+  <rect x="540" y="435" width="330" height="58" class="soft"/><text x="560" y="470" class="text">복수 목표 비교 + 오프망 접속거리 + 대안 다양화</text>
+  <rect x="540" y="510" width="330" height="58" class="soft"/><text x="560" y="545" class="text">API: /layers /route /nearby /incidents /status</text>
+  <rect x="540" y="585" width="330" height="86" class="soft"/>
+  <text x="560" y="620" class="text">핵심 정책</text>
+  <text x="560" y="648" class="text">• no-go 버퍼는 차단</text>
+  <text x="560" y="674" class="text">• caution 버퍼는 비용 가중</text>
+
+  <rect x="1010" y="130" width="320" height="300" class="panel"/>
+  <text x="1040" y="175" class="label">공식 데이터 연계</text>
+  <rect x="1040" y="200" width="260" height="44" class="soft"/><text x="1060" y="228" class="text">브이월드 WMS/WFS</text>
+  <rect x="1040" y="256" width="260" height="44" class="soft"/><text x="1060" y="284" class="text">행안부 대피소/비상급수</text>
+  <rect x="1040" y="312" width="260" height="44" class="soft"/><text x="1060" y="340" class="text">농어촌공사 저수지 / K-water 관정</text>
+  <rect x="1040" y="368" width="260" height="44" class="soft"/><text x="1060" y="396" class="text">산불위험예보 / 산사태 위험지도</text>
+
+  <rect x="370" y="740" width="660" height="120" class="panel"/>
+  <text x="398" y="785" class="label">현장용 PWA 지도</text>
+  <text x="398" y="820" class="text">레이어 토글 · 차단구간 칩 · 브리핑 카드 · 후보 경로 카드 · 오프라인 캐시 · 상태 복원</text>
+
+  <path d="M390 300 C460 300, 460 300, 510 300" class="line"/>
+  <path d="M900 300 C970 300, 970 300, 1010 300" class="line"/>
+  <path d="M705 700 C705 720, 705 725, 705 740" class="line"/>
+
+  <text x="1035" y="500" class="subtitle">초기 운영 권장</text>
+  <text x="1035" y="532" class="text">1. 화선/통제선은 수동 업로드로 시작</text>
+  <text x="1035" y="560" class="text">2. 수동 차단 도로는 현장 반영 후 즉시 재계산</text>
+  <text x="1035" y="588" class="text">3. 전국 기반 레이어는 ETL/배치 적재</text>
+</svg>

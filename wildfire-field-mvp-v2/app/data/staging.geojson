@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "staging-west",
+        "name": "서측 집결지",
+        "kind": "진화대기장소",
+        "address": "샘플군 서면 1-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.59,
+          37.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "staging-central",
+        "name": "중앙 집결지",
+        "kind": "진화대기장소",
+        "address": "샘플군 중앙면 5-1"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.6,
+          37.45
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "staging-south",
+        "name": "남측 임시집결지",
+        "kind": "임시집결지",
+        "address": "샘플군 남면 7-3"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.6,
+          37.442
+        ]
+      }
+    }
+  ]
+}

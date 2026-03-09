@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shelter-north-east",
+        "name": "북동 대피소",
+        "kind": "민방위대피시설",
+        "address": "샘플군 북동면 1-1",
+        "capacity": "450명"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.62,
+          37.458
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "shelter-south-east",
+        "name": "남동 대피소",
+        "kind": "민방위대피시설",
+        "address": "샘플군 남동면 9-1",
+        "capacity": "380명"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          128.62,
+          37.442
+        ]
+      }
+    }
+  ]
+}

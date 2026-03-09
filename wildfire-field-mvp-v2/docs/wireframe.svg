@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <style>
+    .bg { fill:#0b1220; }
+    .panel { fill:#111827; stroke:#233149; stroke-width:2; rx:18; }
+    .soft { fill:#162032; stroke:#233149; stroke-width:1.5; rx:12; }
+    .title { fill:#e5ecf6; font:700 28px 'Noto Sans KR', sans-serif; }
+    .label { fill:#e5ecf6; font:700 20px 'Noto Sans KR', sans-serif; }
+    .text { fill:#cbd5e1; font:400 16px 'Noto Sans KR', sans-serif; }
+    .muted { fill:#95a2b8; font:400 15px 'Noto Sans KR', sans-serif; }
+    .chip { fill:#0f172a; stroke:#233149; stroke-width:1.5; rx:18; }
+  </style>
+  <rect class="bg" width="1400" height="900"/>
+  <text x="50" y="60" class="title">와이어프레임</text>
+
+  <rect x="40" y="100" width="380" height="760" class="panel"/>
+  <text x="65" y="140" class="label">사이드바</text>
+
+  <rect x="65" y="165" width="330" height="120" class="soft"/>
+  <text x="85" y="195" class="text">작전 입력</text>
+  <text x="85" y="225" class="muted">시작점 / 현위치 / 목표 유형 / 야간 모드 / 특정 목표 지정</text>
+
+  <rect x="65" y="300" width="330" height="92" class="soft"/>
+  <text x="85" y="332" class="text">통제 후보 도로</text>
+  <text x="85" y="360" class="muted">차단 칩 목록 / 모두 해제</text>
+
+  <rect x="65" y="407" width="330" height="92" class="soft"/>
+  <text x="85" y="438" class="text">레이어 토글</text>
+  <text x="85" y="466" class="muted">화선, 통제선, 대피소, 수자원, 집결지, 도로/임도</text>
+
+  <rect x="65" y="514" width="330" height="120" class="soft"/>
+  <text x="85" y="545" class="text">업로드</text>
+  <text x="85" y="573" class="muted">화선/통제선 GeoJSON · KML · GPX</text>
+
+  <rect x="65" y="649" width="330" height="90" class="soft"/>
+  <text x="85" y="680" class="text">작전 브리핑</text>
+  <text x="85" y="708" class="muted">선택 경로 핵심 요약 / 최근접 수자원 / 검토 목표 수</text>
+
+  <rect x="65" y="754" width="330" height="86" class="soft"/>
+  <text x="85" y="785" class="text">후보 경로 / 인접 자원 / 연계 카탈로그</text>
+
+  <rect x="450" y="100" width="910" height="760" class="panel"/>
+  <rect x="480" y="130" width="850" height="70" class="soft"/>
+  <text x="505" y="172" class="text">상단 바: 현재 상황 / 레이어 배지 / 수동 차단 개수</text>
+
+  <rect x="480" y="220" width="850" height="560" class="soft"/>
+  <text x="505" y="260" class="text">지도 영역</text>
+  <text x="505" y="292" class="muted">• 시작점 마커</text>
+  <text x="505" y="320" class="muted">• 화선/통제선 오버레이</text>
+  <text x="505" y="348" class="muted">• 대피소/수자원/집결지 마커</text>
+  <text x="505" y="376" class="muted">• 후보 경로 1, 2, 3</text>
+  <text x="505" y="404" class="muted">• 클릭형 도로 차단 표시</text>
+
+  <rect x="1095" y="720" width="220" height="48" class="chip"/>
+  <text x="1120" y="751" class="text">범례</text>
+</svg>

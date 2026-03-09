@@ -1,0 +1,16 @@
+{
+  "name": "산불 현장 종합 안내 MVP",
+  "short_name": "산불MVP",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0b1220",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
